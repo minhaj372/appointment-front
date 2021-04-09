@@ -1,0 +1,30 @@
+@import "../scss/variables";
+//media query
+@import "../scss/media-queries";
+// mixin
+@import "../scss/mixin";
+// utility
+@import "../scss/utilities";
+// button
+@import "../scss/button";
+// login
+@import "../scss/login";
+// Onboard question
+@import "../scss/onboard-question";
+// Component
+@import "../scss/component";
+// fonts
+@font-face {
+    font-family: gil-regular;
+    src: url(../fonts/gilroy-regular.ttf);
+}
+
+@font-face {
+    font-family: gil-medium;
+    src: url(../fonts/gilroy-medium.ttf);
+}
+
+@font-face {
+    font-family: gil-bold;
+    src: url(../fonts/gilroy-bold.ttf);
+}

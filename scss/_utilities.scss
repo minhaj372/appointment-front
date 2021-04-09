@@ -1,0 +1,210 @@
+h2 {
+    font-size: 28px;
+    @include for-min-992 {
+        font-size: 48px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// body 
+body {
+    font-size: 16px;
+    font-family: gil-regular;
+    background: $off-white;
+}
+
+// a
+a {
+    text-decoration: none;
+}
+
+// form
+// form-heading
+.form-heading {
+    font-family: gil-bold;
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-top: 50px;
+    @include for-max-767 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+// color
+.text-gray {
+    color: $gray;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-danger {
+    color: $danger;
+}
+
+.card-form-text {
+    color: $card-form-text;
+}
+
+.light-black-text {
+    color: $light-black;
+}
+
+// background
+.bg-primary {
+    background: $primary;
+}
+
+.bg-secondery {
+    background: $secondery;
+}
+
+.bg-light-white {
+    background: $light-white;
+    @include for-min-768 {
+        background: transparent;
+    }
+}
+
+.bg-user {
+    background: $user-bg;
+}
+
+.bg-light-white-full {
+    background: $light-white;
+}
+
+.card-bg {
+    background: $card-bg;
+}
+
+.card-form-bg {
+    background: $card-form-bg;
+}
+
+.card-form-edit-bg {
+    background: $card-form-edit;
+}
+
+.card-form-copy-bg {
+    background: $card-form-text;
+}
+
+// font-size
+.text-28-20 {
+    font-size: 20px;
+    @include for-min-768 {
+        font-size: 28px;
+    }
+}
+
+// border
+.primary-border {
+    border-color: $primary;
+}
+
+.accrodion-border {
+    border-color: $user-bg;
+}
+
+.danger-border {
+    border-color: $danger;
+}
+
+.white-border-75 {
+    border-color: $white-border;
+}
+
+.card-form-border {
+    border-color: $card-form-text;
+}
+
+// border-width {
+.border-1 {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-2 {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.border-3 {
+    border-width: 3px;
+    border-style: solid;
+}
+
+// 
+.disabled-border {
+    border: 1px solid $user-bg !important;
+}
+
+// outline
+.focus-outline-0 {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+// primary shadow
+.primary-shadow {
+    box-shadow: $primary-shadow;
+}
+
+// font-family 
+.gil-bold {
+    font-family: gil-bold;
+}
+
+.gil-regular {
+    font-family: gil-regular;
+}
+
+.gil-medium {
+    font-family: gil-medium;
+}
+
+// border-color
+.border-primary-50 {
+    border-color: $border-primary-50;
+}
+
+// triangle arrow
+.triangle-arrow {
+    &::after {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $light-black;
+        content: '';
+        display: inline-block;
+        margin-left: 4px;
+    }
+}
+
+// icon
+.plus-icon {
+    position: relative;
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 28px;
+        width: 15px;
+        transform: translate(-50%, -50%);
+        border-bottom: 2px solid white;
+    }
+    &::before {
+        transform: translate(-50%, -50%) rotate( 90deg);
+    }
+}

@@ -1,0 +1,59 @@
+.btn {
+    height: 48px;
+    display: flex;
+    border-radius: 8px;
+    transition: all .3s ease-in;
+    &:hover {
+        opacity: .8;
+    }
+    &__primary {
+        background: $primary;
+    }
+    &__secondery {
+        background: $secondery;
+    }
+    &__outline {
+        background: transparent;
+    }
+    &__back {
+        @include back-btn;
+        &::before {
+            position: absolute;
+            padding: 5px;
+            box-shadow: 1px -1px 0 1px $soft-black inset;
+            -webkit-box-shadow: 2px -2px $soft-black inset;
+            border: solid transparent;
+            border-width: 0 0 2rem 2rem;
+            transition: 0.2s;
+            transform: rotate( 45deg);
+            content: '';
+            left: -20px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 2px;
+            background: $soft-black;
+            left: 20px;
+        }
+    }
+    &__close {
+        @include back-btn;
+        &::after,
+        &::before {
+            position: absolute;
+            left: 25px;
+            content: ' ';
+            height: 15px;
+            width: 2px;
+            background-color: $soft-black;
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+    }
+}

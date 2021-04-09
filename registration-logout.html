@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- Title -->
+    <title>Welcome to Registration</title>
+
+</head>
+<!-- Login -->
+<div class="login-form">
+    <div class="flex flex-wrap flex-col lg:flex-row">
+        <div class="login-form__content flex w-fill lg:w-7/12">
+            <h2 class="text-white relative z-10 ml-5 md:ml-20 xl:ml-44 mr-12 md:mr-0 mb-4 sm:mb-24 mt-auto text-xl sm:text-5xl">We help you schedul appointment without the <br><b>back-and-forth emails</b></h2>
+        </div>
+        <div class="login-form__content flex-1">
+            <div class="login-form__content__language">
+
+                <p class="text-sm"><span class="text-gray">Language:</span> <a href="#" class="change-language gil-medium triangle-arrow ml-2" onclick="myFunction()"> English</a></p>
+                <ul class="change-language-list ml-16 w-32 bg-blue-100 p-2 rounded-sm absolute z-10 mt-2" id="myDropdown">
+                    <li><a href="#">Bangla</a></li>
+                    <li><a href="#">Bangla</a></li>
+                    <li><a href="#">Bangla</a></li>
+                </ul>
+            </div>
+            <!-- form -->
+            <form action="#">
+                <div class="form-logo absolute top-0 left-0 bg-light-white md:bg-transparent w-full py-1.5 px-5 md:p-0 md:static">
+                    <a href="#" class="text-28-20 gil-bold">Appoint <span class="bg-primary rounded text-white px-1 pb-1">.get</span></a>
+                </div>
+                <h6 class="form-heading">Sign in your account</h6>
+
+                <div class="form-group">
+                    <label for="email" class="form-group__label">Gmail address</label>
+                    <input type="text" name="email" id="email" class="form-group__input pl-4 rounded-lg ">
+                </div>
+                <div class="form-group">
+                    <label for="pass" class="form-group__label">Password</label>
+                    <input type="password" name="email" id="pass" class="form-group__input pl-4 rounded-lg ">
+                </div>
+                <div class="mt-8 md:mt-12">
+                    <button class="btn btn__primary items-center justify-center w-full primary-shadow gil-bold text-white">Confirm</button>
+                </div>
+                <div class="login-form__content__no-account mt-8 md:mt-12">
+                    <p class="text-sm gil-medium">Prefer to create an account with password?<a href="#" class="text-primary ml-1"><u>Click here</u></a>
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- custom java script -->
+    <script src="js/main.js" async defer></script>
+</body>
+
+</html>
